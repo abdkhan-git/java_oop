@@ -1,0 +1,27 @@
+A class is like a Template, where an you put set Behaviors (Methods) and properties (Instance variables)
+which every Object of its kind will Posses.
+
+Java Modifiers:
+    Access Modifiers - default, public, protected, private
+    Non-Access Modifiers - final, abstract
+
+Java Instance Variables:
+    declared in a class, but outside a method, constructor, or any block
+    Instance variables can have default values; for nums default = 0, for booleans default = false, and for object
+    references like a string, default = null.
+
+Object means a real-world entity such as a phone, book, or car.
+    * Object is an instance of a class
+    * So for example if we have a Student Class, some member attributes that we can create for it would be
+    the students' name, the students' major, and the students' age.
+    * Now since we have multiple students that we might want to add to our code, we create student objects of that class.
+    * Each Student will typically have varying info, which is why creating objects becomes efficient.
+
+Further Notes:
+4 Pillars of OOP
+    1. Encapsulation: basically the wrapping up of private variables and methods in one class. And in order to unlock the content of those variables
+    you use setter and getter methods.
+    2. Abstraction: is the process of hiding certain details and only showing whats necessary to the user
+        * So you can either have an abstract class or an abstract method
+            1. Abstract class - is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+            2. Abstract method - can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).

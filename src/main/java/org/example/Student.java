@@ -1,22 +1,28 @@
 package org.example;
 
 public class Student {
+    // properties along with access modifiers
     public String name;
     public String major;
     private int age;
+    private String ramId;
 
+    // Default Constructor - this is what is called as soon as an object is created
     public Student() {
         System.out.println("Default Constructor");
-        this.name = "Unknown";
-        this.major = "None";
-        this.age = 0;
+        name = "Unknown"; // otherwise would be null
+        major = "None"; // otherwise would be null
+        age = 1; // otherwise would be 0
+        ramId = "Unknown"; // otherwise would be null
     }
 
-   public Student(String name, String major, int age) {
+    // parameterized constructor
+   public Student(String name, String major, int age, String ramId) {
        System.out.println("Parameterized Constructor");
        setName(name);
        setMajor(major);
        setAge(age);
+       setRamId(ramId);
    }
 
    void setName(String name) {
@@ -41,6 +47,14 @@ public class Student {
 
    int getAge() {
        return age;
+   }
+
+   void setRamId(String ramId) {
+        this.ramId = ramId;
+   }
+
+   String getRamId() {
+        return ramId;
    }
 
 }
