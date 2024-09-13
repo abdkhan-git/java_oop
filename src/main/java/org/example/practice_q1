@@ -1,0 +1,35 @@
+Basic Questions:
+Q1: Create a Car class with the following properties:
+    make (String)
+    model (String)
+    year (int)
+
+Then create a Main class and instantiate two Car objects.
+Set their properties using a constructor and print out their details.
+
+//
+public class Car {
+    public String make;
+    public String model;
+    public int year;
+
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    public void displayInfo() {
+        System.out.println("Car: year + " " + model + " " + model);
+    }
+ }
+
+ public class Main() {
+    public static void main(String[] args) {
+        Car car1 = new Car("Toyota", "Camry", 2020);
+        Car car2 = new Car("Honda", "Civic", 2021);
+
+        car1.displayInfo();
+        car2.displayInfo();
+    }
+}

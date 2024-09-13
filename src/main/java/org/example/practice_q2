@@ -1,0 +1,31 @@
+Q2: Write a class Book that contains:
+    A title (String)
+    An author (String)
+    A method displayInfo() that prints out the book's title and author.
+Create two Book objects and call the displayInfo() method on both.
+
+public class Book {
+    public String title;
+    public String author;
+
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+
+    void displayInfo() {
+        System.out.println("Title" + " " + title + " " + "Author: " + author);
+    }
+
+public class Main() {
+    public static void main(String[] args) {
+
+    Book book1 = new Book("Cat in the hat", "Dr.Seuss");
+    Book book2 = new Book("Harry Potter", "JK Rowling");
+
+    book1.displayInfo();
+    book2.displayInfo();
+
+        }
+   }
+

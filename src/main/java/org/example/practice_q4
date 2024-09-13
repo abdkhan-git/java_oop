@@ -1,0 +1,63 @@
+Q8: Write a Dog class with the following properties:
+    name (String)
+    age (int)
+    breed (String)
+Write a constructor and a bark() method that prints "Woof!".
+Now create a Cage class that can hold an array of Dog objects. Write a method addDog(Dog dog) to add a dog to the kennel
+, and a method allDogsBark() that calls the bark() method for each dog in the kennel.
+
+public class Dog {
+    public String name;
+    public int age;
+    public String breed;
+
+    public Dog(String name, int age, String breed) {
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+    }
+
+    public void bark() {
+        System.out.println(name + " says Woof");
+    }
+
+public class Cage {
+    Dog[] dogs;
+    int count;
+
+    public Cage(int capacity) {
+        dogs = new Dog[capacity];
+        count = 0;
+    }
+
+    public void addDog(Dog dog) {
+            if (count < dogs.length) {
+                dogs[count] = dog;
+                count++;
+            } else {
+                System.out.println("Kennel is full!");
+            }
+        }
+
+        public void allDogsBark() {
+            for (int i = 0; i < count; i++) {
+                dogs[i].bark();
+            }
+        }
+    }
+
+public class Main {
+    public static void main(String[] args) {
+        Cage cage = new Cage(3);
+        Dog dog1 = new Dog("Buddy", 3, "Golden Retriever");
+        Dog dog2 = new Dog("Max", 2, "Labrador");
+        Dog dog3 = new Dog("Bella", 1, "Poodle");
+
+        kennel.addDog(dog1);
+        kennel.addDog(dog2);
+        kennel.addDog(dog3);
+
+        kennel.allDogsBark();
+    }
+}
+

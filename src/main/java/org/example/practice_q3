@@ -1,0 +1,39 @@
+Q3: Write a class Student with the following fields:
+    name (String)
+    age (int)
+    grade (double)
+    Write a constructor to initialize these fields.
+
+Add a method getDetails() that prints the student's name, age, and grade.
+In the Main class, create an array of 3 Student objects and print the details of each student.
+
+class Student {
+    String name;
+    int age;
+    double grade;
+
+    // Constructor
+    public Student(String name, int age, double grade) {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+    }
+
+    // Method to display student details
+    public void getDetails() {
+        System.out.println("Name: " + name + ", Age: " + age + ", Grade: " + grade);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student[] students = new Student[3];
+        students[0] = new Student("Alice", 20, 85.5);
+        students[1] = new Student("Bob", 21, 90.0);
+        students[2] = new Student("Charlie", 22, 88.0);
+
+        for (Student student : students) {
+            student.getDetails();
+        }
+    }
+}
