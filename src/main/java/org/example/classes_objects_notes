@@ -25,3 +25,5 @@ Further Notes:
         * So you can either have an abstract class or an abstract method
             1. Abstract class - is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
             2. Abstract method - can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+    3. Inheritance - allows sub classes to receive attributes and methods from a superclass
+    4. Polymorphism takes the methods received from inheritance and then changes the function to match its needs
