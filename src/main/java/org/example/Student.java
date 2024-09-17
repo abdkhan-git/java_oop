@@ -2,8 +2,8 @@ package org.example;
 
 public class Student {
     // properties along with access modifiers
-    public String name;
-    public String major;
+    private String name;
+    private String major;
     private int age;
     private String ramId;
 
@@ -12,7 +12,7 @@ public class Student {
         System.out.println("Default Constructor");
         name = "Unknown"; // otherwise would be null
         major = "None"; // otherwise would be null
-        age = 1; // otherwise would be 0
+        age = 18; // otherwise would be 0
         ramId = "Unknown"; // otherwise would be null
     }
 

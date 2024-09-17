@@ -2,7 +2,7 @@ Q8: Write a Dog class with the following properties:
     name (String)
     age (int)
     breed (String)
-Write a constructor and a bark() method that prints "Woof!".
+Write a constructor and a bark() method that prints the name of the dog and "Woof!".
 Now create a Cage class that can hold an array of Dog objects. Write a method addDog(Dog dog) to add a dog to the kennel
 , and a method allDogsBark() that calls the bark() method for each dog in the kennel.
 

@@ -12,13 +12,11 @@ So in simpler terms classes are templates for objects, and objects are instances
 
 Java Modifiers:
     Access Modifiers - default, public, protected, private
-    Non-Access Modifiers - final, abstract
 
 Java Instance Variables:
     declared in a class, but outside a method, constructor, or any block
     Instance variables can have default values; for nums default = 0, for booleans default = false, and for object
     references like a string, default = null.
-
 
 Further Notes:
 4 Pillars of OOP
